@@ -3,26 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smartsupp Test</title>
-
-  <!-- Smartsupp Live Chat -->
-  <script type="text/javascript">
-    var _smartsupp = _smartsupp || {};
-    _smartsupp.key = 'df1482b6d91868689a46dd6f8b855f77a9bbf56e';
-    window.smartsupp || (function(d) {
-      var s, c, o = smartsupp = function() {
-        o._.push(arguments);
-      };
-      o._ = [];
-      s = d.getElementsByTagName('script')[0];
-      c = d.createElement('script');
-      c.type = 'text/javascript';
-      c.charset = 'utf-8';
-      c.async = true;
-      c.src = 'https://www.smartsuppchat.com/loader.js?';
-      s.parentNode.insertBefore(c, s);
-    })(document);
-  </script>
+  <title>Smartsupp Link Test</title>
 
   <style>
     html, body {
@@ -43,7 +24,7 @@
 
     .box {
       padding: 40px;
-      max-width: 600px;
+      max-width: 650px;
     }
 
     h1 {
@@ -55,16 +36,44 @@
       font-size: 20px;
       line-height: 1.6;
     }
+
+    .chat-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+      padding: 16px 24px;
+      border-radius: 999px;
+      background: white;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .chat-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+    }
   </style>
 </head>
 
 <body>
-  <noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
-
   <div class="box">
     <h1>Hello World</h1>
-    <p>Smartsupp standalone integration test.</p>
-    <p>If the Smartsupp chat bubble appears, the integration itself is working.</p>
+    <p>This is a completely standalone Smartsupp link test.</p>
+    <p>Click the button below to open the Smartsupp widget page.</p>
+
+    <a
+      class="chat-button"
+      href="https://widget-page.smartsupp.com/widget/df1482b6d91868689a46dd6f8b855f77a9bbf56e"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Open Smartsupp Chat
+    </a>
   </div>
 </body>
 </html>
